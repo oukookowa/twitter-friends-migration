@@ -1,0 +1,24 @@
+import tweepy
+
+# Old Account API Keys
+old_auth = tweepy.OAuthHandler("OLD_API_KEY", "OLD_API_SECRET")
+old_auth.set_access_token("OLD_ACCESS_TOKEN", "OLD_ACCESS_SECRET")
+old_api = tweepy.API(old_auth)
+
+# New Account API Keys
+new_auth = tweepy.OAuthHandler("NEW_API_KEY", "NEW_API_SECRET")
+new_auth.set_access_token("NEW_ACCESS_TOKEN", "NEW_ACCESS_SECRET")
+new_api = tweepy.API(new_auth)
+
+# Get Following List from Old Account
+old_following = []
+for user in tweepy.Cursor(old_api.get_friends).items():
+    old_following.append(user.screen_name)
+
+# Follow Users on New Account
+for username in old_following:
+    try:
+        new_api.create_friendship(screen_name=username)
+        print(f"Followed: {username}")
+    except tweepy.TweepError as e:
+        print(f"Error following {username}: {e}")
