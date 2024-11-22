@@ -25,7 +25,7 @@ This Python script automates the migration of your Twitter friends (accounts you
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/oukookowa/twitter-friends-migration.git
-cd twitter-friend-migration
+cd twitter-friends-migration
 ```
 
 ### 2. Set Up API Credentials
