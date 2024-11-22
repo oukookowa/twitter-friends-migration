@@ -103,9 +103,9 @@ git push origin main
 Submit a Pull Request: Go to the original repository and click `New Pull Request`.
 
 ## Security Notes
-Keep Credentials Secure: Use .gitignore to exclude sensitive files from version control.
-Use Environment Variables: Store API keys and tokens in a .env file.
-Compliance: Ensure the script adheres to Twitter API policies.
+Keep Credentials Secure: Use `.gitignore` to exclude sensitive files from version control.
+Use Environment Variables: Store API keys and tokens in a `.env` file.
+Compliance: Ensure the script adheres to `Twitter API Policies`.
 
 ## Conclusion
 This script offers a scalable solution for migrating Twitter friends between accounts. With opportunities for customization and enhancements, it can cater to various user needs.
