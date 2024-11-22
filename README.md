@@ -6,9 +6,9 @@ This Python script automates the migration of your Twitter friends (accounts you
 ## Prerequisites
 1. **Python Environment**
    - Install Python 3.x.
-   - Install Tweepy using the command:
+   - Install the project dependencies:
      ```bash
-     pip install tweepy
+     pip install requirements.txt
      ```
 
 2. **Twitter Developer Account**
@@ -45,7 +45,13 @@ NEW_ACCESS_TOKEN = "your_new_account_access_token"
 NEW_ACCESS_SECRET = "your_new_account_access_secret"
 ```
 
-### 3. Run the Script
+### 3. Test the Connection
+Run the script to test authentication and connection:
+```bash
+python test_connection.py
+```
+
+### 4. Run the Script
 Run the script to start migrating your friends list:
 
 ```bash
@@ -84,16 +90,16 @@ Developers can enhance the script by implementing additional functionality:
 Fork the Repository: Go to the GitHub Repository and click `Fork`.
 Clone the Forked Repo:
 ```bash
-git clone https://github.com/yourusername/twitter-friends-migration.git
+git clone https://github.com/oukookowa/twitter-friends-migration.git
+```
 Make Changes: Add new features or improve the code.
 Push Changes:
-bash
-Copy code
+```bash
 git add .
 git commit -m "Added new feature"
 git push origin main
-Submit a Pull Request: Go to the original repository and click "New Pull Request."
 ```
+Submit a Pull Request: Go to the original repository and click `New Pull Request`.
 
 ## Security Notes
 Keep Credentials Secure: Use .gitignore to exclude sensitive files from version control.
